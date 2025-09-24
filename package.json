@@ -4,7 +4,14 @@
   "type": "module",
   "main": "hardhat.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "deploy:local": "npx hardhat run scripts/deploy.js --network hardhat",
+    "deploy:testnet": "npx hardhat run scripts/deploy.js --network seitestnet",
+    "deploy:mainnet": "npx hardhat run scripts/deploy.js --network seimainnet",
+    "interact:local": "npx hardhat run scripts/interact.js --network hardhat",
+    "interact:testnet": "npx hardhat run scripts/interact.js --network seitestnet",
+    "node": "npx hardhat node"
   },
   "keywords": [],
   "author": "",

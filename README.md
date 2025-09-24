@@ -15,5 +15,8 @@ npm run deploy:testnet    # Deploy to Sei testnet
 # Interact with deployed contract
 npm run interact:testnet  # (update contract address in script first)
 
+# Deploy to mainnet
+npm run deploy:mainnet
+
 # Run tests
 npm test
